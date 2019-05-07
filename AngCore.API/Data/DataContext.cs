@@ -9,6 +9,8 @@ namespace AngCore.API.Data
 
         public DbSet<Value> Values { get; set; }
 
+        public DbSet<Todo> Todos { get; set; }
+
     protected override void OnModelCreating(ModelBuilder bldr)
     {
       bldr.Entity<Value>()
@@ -28,6 +30,28 @@ namespace AngCore.API.Data
             Name = "Value 3",
         });
 
+        bldr.Entity<Todo>()
+        .HasData(new Todo
+        {
+            Id = 1,
+            Name = "Clean your room.",
+            Description = "Clean your room.",
+            Completed = false
+        },
+        new Todo
+        {
+            Id = 2,
+            Name = "Hang the pictures",
+            Description = "Clean your room.",
+            Completed = false
+        },
+        new Todo
+        {
+            Id = 3,
+            Name = "Finish the Todo App",
+            Description = "Finish coding the todo app.",
+            Completed = false
+        });
 
     }
     }
