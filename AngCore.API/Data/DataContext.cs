@@ -34,15 +34,15 @@ namespace AngCore.API.Data
         .HasData(new Todo
         {
             Id = 1,
-            Name = "Clean your room.",
-            Description = "Clean your room.",
+            Name = "Clean my room.",
+            Description = "Clean my room and Closet.",
             Completed = false
         },
         new Todo
         {
             Id = 2,
             Name = "Hang the pictures",
-            Description = "Clean your room.",
+            Description = "Hang pictures in the office",
             Completed = false
         },
         new Todo
