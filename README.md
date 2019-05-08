@@ -17,7 +17,9 @@ Installation instructions
 
 Testing the Web API Core service
 SELECT ALL - Get http://localhost:5000/api/todos/
+
 SELECT By ID - Get http://localhost:5000/api/todos/2
+
 INSERT NEW - Post http://localhost:5000/api/todos 
         HEADER
         Key: Content-Type  Value: application/json
@@ -27,6 +29,7 @@ INSERT NEW - Post http://localhost:5000/api/todos
             "description": "Take the trash out",
             "completed": false
         }
+        
 UPDATE - Put http://localhost:5000/api/todos/2
         HEADER
         Key: Content-Type  Value: application/json
@@ -36,6 +39,7 @@ UPDATE - Put http://localhost:5000/api/todos/2
             "description": "Take the trash out again",
             "completed": false
         }
+        
 DELETE - Delete http://localhost:5000/api/todos/3
 
 Things I would like to Add to the App
