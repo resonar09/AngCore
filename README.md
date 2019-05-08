@@ -12,7 +12,10 @@ Installation instructions
 10. <run> C:\Projects\TEST\AngCore> cd AngCore-SPA
 11. <run> C:\Projects\TEST\AngCore\AngCore-SPA> npm install
 12. <run> C:\Projects\TEST\AngCore\AngCore-SPA> ng serve
-13  <browse> http://localhost:4200/
+13.  <browse> http://localhost:4200/
+
+GET http://localhost:5000/api/todos
+GET http://localhost:5000/api/todos/2
 
 
 Things I would like to Add to the App
@@ -23,3 +26,4 @@ Things I would like to Add to the App
 5. Logging
 6. AutoMapper to map Entities to DTOs
 7. Swagger to Document
+
